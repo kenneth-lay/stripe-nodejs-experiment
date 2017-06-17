@@ -1,0 +1,40 @@
+<!doctype html>
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Create &amp; Attach Subscription Plan to a Product</title>
+</head>
+
+<body>
+    <h1>Create &amp; Attach Subscription Plan to a Product</h1>
+    <form action="/" method="post">
+    	<input type="hidden" id="action" name="action" value="create_plan">
+    	<div>
+	        <label for="secret_key">Secret Key:</label>
+	        <input type="password" id="secret_key" name="secret_key">
+	    </div>
+	    <div>
+	        <label for="plan_name">Plan Name:</label>
+	        <input type="text" id="plan_name" name="plan_name">
+	    </div>
+	    <div>
+	        <label for="interval">Interval:</label>
+	        <select id="plan_interval" name="plan_interval">
+  				<option value = "week">Weekly</option>
+				<option value = "month">Monthly</option>
+				<option value = "year">Yearly</option>
+			</select>
+	    </div>
+	    <div>
+	        <label for="product_name">Product Name:</label>
+	        <select id="product_name" name="product_name">
+  				{{product_names}}
+			</select>
+	    </div>
+	    <input type="submit" value="Create Plan">
+	</form>
+</body>
+
+</html>

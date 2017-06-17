@@ -1,0 +1,46 @@
+<!doctype html>
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Add Customer</title>
+</head>
+
+<body>
+    <h1>Add Customer</h1>
+    <form action="/" method="post">
+    	<input type="hidden" id="action" name="action" value="create_customer">
+	    <div>
+	        <label for="secret_key">Secret Key:</label>
+	        <input type="password" id="secret_key" name="secret_key">
+	    </div>
+	    <div>
+	        <label for="customer_name">Customer Name:</label>
+	        <input type="text" id="customer_name" name="customer_name">
+	    </div>
+	    <div>
+	        <label for="customer_email">Email:</label>
+	        <input type="text" id="customer_email" name="customer_email">
+	    </div>
+	    <div>
+	        <label for="card_number">Card Number:</label>
+	        <input type="text" id="card_number" name="card_number">
+	    </div>
+	    <div>
+	        <label for="exp_month">Exp Month:</label>
+	        <input type="text" id="exp_month" name="exp_month">
+	    </div>
+	    <div>
+	        <label for="exp_year">Exp Year:</label>
+	        <input type="text" id="exp_year" name="exp_year">
+	    </div>
+	    <div>
+	        <label for="cvc">CVC:</label>
+	        <input type="text" id="cvc" name="cvc">
+	    </div>
+	    <input type="submit" value="Add Customer">
+	</form>
+</body>
+
+</html>
