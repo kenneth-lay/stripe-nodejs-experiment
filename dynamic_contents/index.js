@@ -19,6 +19,15 @@ module.exports = {
 				  		for (i = 0; i < product_list.length; i++) {
 				  			var tpl_filled = tpl.replace(/\{\{product_name\}\}/g, product_list[i].name);
 				  			tpl_filled = tpl_filled.replace(/\{\{product_price\}\}/g, product_list[i].price);
+
+				  			if (product_list[i].plan) {
+				  				tpl_filled = tpl_filled.replace(/\{\{subscribe\}\}/g, "Subscribe");
+				  				tpl_filled = tpl_filled.replace(/\{\{plan_id\}\}/g, product_list[i].plan);
+				  			}
+				  			else {
+				  				tpl_filled = tpl_filled.replace(/\{\{subscribe\}\}/g, "");
+				  			}
+
 				  			table = table + tpl_filled;
 				  		}
 

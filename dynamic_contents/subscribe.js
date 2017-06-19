@@ -6,6 +6,6 @@ module.exports = {
 		var get_data = (url.parse(req.url, true)).query;
 
 		data = data.replace(/\{\{product_name\}\}/g, get_data.product_name);
-		callback(data.replace(/\{\{product_price\}\}/g, get_data.product_price));
+		callback(data.replace(/\{\{plan_id\}\}/g, get_data.plan_id));
   	}
 };

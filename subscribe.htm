@@ -10,9 +10,8 @@
 <body>
     <h1>Buy</h1>
     <form action="/" method="post">
-    	<input type="hidden" id="action" name="action" value="create_charge">
-    	<input type="hidden" id="product_name" name="product_name" value = "{{product_name}}">
-    	<input type="hidden" id="product_price" name="product_price" value = {{product_price}}>
+    	<input type="hidden" id="action" name="action" value="subscribe">
+    	<input type="hidden" id="plan_id" name="plan_id" value="{{plan_id}}">
     	<div>
 	        <label for="secret_key">Secret Key:</label>
 	        <input type="password" id="secret_key" name="secret_key">
@@ -24,10 +23,7 @@
 	    <div>
 	        <label>Product: {{product_name}}</label>
 	    </div>
-	    <div>
-	        <label>Price: {{product_price}}</label>
-	    </div>
-	    <input type="submit" value="Buy">
+	    <input type="submit" value="Subscribe">
 	</form>
 </body>
 
